@@ -8,11 +8,12 @@ message LoadPostParam {
 }
 
 message LoadingStatus {
-    int64 JobId = 1;
+    string ProcessId = 1;
     string Status = 2;
     int64 WorkOfDone = 3;
+    int64 TotalWork = 4;
 }
 
 message JobId {
-    int64 Id = 1;
+    string Id = 1;
 }
